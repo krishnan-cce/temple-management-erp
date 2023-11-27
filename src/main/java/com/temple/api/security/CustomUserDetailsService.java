@@ -1,8 +1,8 @@
 package com.temple.api.security;
 
 
-import com.temple.api.entity.User;
-import com.temple.api.repository.UserRepository;
+import com.temple.api.entity.user.User;
+import com.temple.api.repository.user.UserRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

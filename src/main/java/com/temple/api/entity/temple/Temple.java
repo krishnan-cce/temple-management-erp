@@ -1,6 +1,8 @@
-package com.temple.api.payload;
+package com.temple.api.entity.temple;
 
-import jakarta.persistence.Column;
+import jakarta.persistence.*;
+import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,17 +10,33 @@ import lombok.Setter;
 
 import java.util.Date;
 
-@Setter
 @Getter
-@NoArgsConstructor
+@Setter
 @AllArgsConstructor
-public class TempleDto {
+@NoArgsConstructor
 
+@Entity
+@Table(
+        name = "Temple"
+)
+public class Temple {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long templeID;
 
+    @Column(nullable = false)
     private String templeName;
 
     private String location;
+
+    private String templeCode;
+
+    private String templeAddress;
+
+    private Date addedDate;
+
+    private String AddUID;
 
     private Date dateEstablished;
 

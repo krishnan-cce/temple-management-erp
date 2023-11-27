@@ -1,13 +1,9 @@
 package com.temple.api.config;
 
 
-import com.temple.api.entity.User;
-import com.temple.api.utils.ContextHolder;
 import com.temple.api.utils.DataSourceType;
-import com.temple.api.utils.UserUtils;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -18,13 +14,6 @@ import java.util.Map;
 
 public class RoutingDataSource extends AbstractRoutingDataSource {
 
-
-    private UserUtils userUtils;
-
-    @Autowired
-    public void setUserUtils(UserUtils userUtils) {
-        this.userUtils = userUtils;
-    }
     @Override
     protected Object determineCurrentLookupKey() {
 
@@ -45,12 +34,6 @@ public class RoutingDataSource extends AbstractRoutingDataSource {
                 }
             }
         }
-//        if (RequestContextHolder.getRequestAttributes() != null) {
-//            HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes())
-//                    .getRequest();
-//            dataSourceType = (DataSourceType) request.getAttribute("database");
-//        }
-
         return dataSourceType;
     }
 

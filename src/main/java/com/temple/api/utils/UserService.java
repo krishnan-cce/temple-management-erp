@@ -1,6 +1,6 @@
 package com.temple.api.utils;
 
-import com.temple.api.repository.UserRepository;
+import com.temple.api.repository.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

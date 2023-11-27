@@ -1,7 +1,7 @@
 package com.temple.api.utils;
 
-import com.temple.api.entity.User;
-import com.temple.api.repository.UserRepository;
+import com.temple.api.entity.user.User;
+import com.temple.api.repository.user.UserRepository;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;

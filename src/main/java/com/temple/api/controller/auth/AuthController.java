@@ -1,10 +1,10 @@
-package com.temple.api.controller;
+package com.temple.api.controller.auth;
 
 
-import com.temple.api.payload.JWTAuthResponse;
-import com.temple.api.payload.LoginDto;
-import com.temple.api.payload.RegisterDto;
-import com.temple.api.service.AuthService;
+import com.temple.api.payload.auth.JWTAuthResponse;
+import com.temple.api.payload.auth.LoginDto;
+import com.temple.api.payload.auth.RegisterDto;
+import com.temple.api.service.auth.AuthService;
 import com.temple.api.utils.ContextHolder;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;

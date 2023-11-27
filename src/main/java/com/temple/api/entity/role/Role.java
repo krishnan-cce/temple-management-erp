@@ -1,4 +1,4 @@
-package com.temple.api.entity;
+package com.temple.api.entity.role;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

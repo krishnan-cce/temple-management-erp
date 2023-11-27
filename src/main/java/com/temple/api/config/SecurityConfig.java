@@ -1,6 +1,6 @@
 package com.temple.api.config;
 
-import com.temple.api.interceptor.DataSourceInterceptor;
+
 import com.temple.api.security.JwtAuthenticationEntryPoint;
 import com.temple.api.security.JwtAuthenticationFilter;
 import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;

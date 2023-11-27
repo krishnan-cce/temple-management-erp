@@ -1,4 +1,4 @@
-package com.temple.api.payload;
+package com.temple.api.payload.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

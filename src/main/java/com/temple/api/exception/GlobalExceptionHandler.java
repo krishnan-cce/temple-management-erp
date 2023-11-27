@@ -1,7 +1,7 @@
 package com.temple.api.exception;
 
 
-import com.temple.api.payload.ErrorDetails;
+import com.temple.api.payload.common.ErrorDetails;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;

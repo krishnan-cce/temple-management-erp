@@ -1,4 +1,4 @@
-package com.temple.api.payload;
+package com.temple.api.payload.common;
 
 import java.util.Date;
 

@@ -1,14 +1,14 @@
-package com.temple.api.serviceimpl;
+package com.temple.api.serviceimpl.auth;
 
-import com.temple.api.entity.Role;
-import com.temple.api.entity.User;
+import com.temple.api.entity.role.Role;
+import com.temple.api.entity.user.User;
 import com.temple.api.exception.CommonAPIException;
-import com.temple.api.payload.LoginDto;
-import com.temple.api.payload.RegisterDto;
-import com.temple.api.repository.RoleRepository;
-import com.temple.api.repository.UserRepository;
+import com.temple.api.payload.auth.LoginDto;
+import com.temple.api.payload.auth.RegisterDto;
+import com.temple.api.repository.role.RoleRepository;
+import com.temple.api.repository.user.UserRepository;
 import com.temple.api.security.JwtTokenProvider;
-import com.temple.api.service.AuthService;
+import com.temple.api.service.auth.AuthService;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

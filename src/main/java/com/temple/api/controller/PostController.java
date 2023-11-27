@@ -1,7 +1,7 @@
 package com.temple.api.controller;
 
 
-import com.temple.api.entity.User;
+import com.temple.api.entity.user.User;
 import com.temple.api.payload.PostDto;
 import com.temple.api.payload.PostResponse;
 import com.temple.api.service.PostService;

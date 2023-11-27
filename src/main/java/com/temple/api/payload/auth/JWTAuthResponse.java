@@ -1,4 +1,4 @@
-package com.temple.api.payload;
+package com.temple.api.payload.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class LoginDto {
-    private String usernameOrEmail;
-    private String password;
+public class JWTAuthResponse {
+    private String accessToken;
+    private String tokenType = "Bearer";
 }

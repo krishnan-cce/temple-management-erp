@@ -1,6 +1,6 @@
-package com.temple.api.repository;
+package com.temple.api.repository.user;
 
-import com.temple.api.entity.User;
+import com.temple.api.entity.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
